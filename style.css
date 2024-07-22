@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn{
+    width:150px;
+    height: 150px;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+#grey{
+    background-color: grey;
+}
+
+#blue{
+    background-color: blue;
+}
+
+#lightseagreen{
+    background-color: lightseagreen;
+}
+
+#darkgoldenrod{
+    background-color: darkgoldenrod;
+}
+
+#red{
+    background-color: red;
+}
+
+#lightskyblue{
+    background-color: lightskyblue;
+}
+
+@media screen and (max-width:435px) {
+    .wrapper{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        place-items: center;
+        align-content: center;
+        gap: 2px;
+        row-gap: 20px;
+    }
+}
